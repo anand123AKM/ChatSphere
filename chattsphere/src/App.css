@@ -20,3 +20,10 @@ html, body {
 .content-container {
   width: 100%;
 }
+
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: blue;
+  }
+}
