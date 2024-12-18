@@ -23,7 +23,7 @@ html, body {
 
 
 @media screen and (max-width: 768px) {
-  body {
-    background-color: blue;
+html, body {
+    display: none;
   }
 }
