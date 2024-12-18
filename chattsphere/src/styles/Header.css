@@ -2,10 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background-color: #1f1f2f;
+  padding: 4px 20px;
+  background-color: #000000;
   color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid #333333;
 }
 
 .logo-container {
@@ -21,8 +22,9 @@
 }
 
 .logo-text {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: white;
+   font-family: 'Poppins', sans-serif;
 }
 
 .header-icons {
@@ -30,9 +32,9 @@
   align-items: center;
 }
 
-.header-icon {
+.icon {
   font-size: 1.5rem;
-  margin-left: 15px;
+  margin-left: 25px;
   cursor: pointer;
   color: white;
 }

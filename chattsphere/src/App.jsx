@@ -9,14 +9,14 @@ import "./App.css";
 function App() {
   return (
     <div className="app-container">
-      <Sidebar />
       <div className="content-container">
         <Header />
         <main className="main-content">
+          <Sidebar />
           <PostCard />
+          <ChatFriends />
         </main>
       </div>
-      <ChatFriends />
     </div>
   );
 }

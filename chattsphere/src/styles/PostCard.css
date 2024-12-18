@@ -1,29 +1,104 @@
-.tabs {
-  display: flex;
-  justify-content: flex-start;
-  gap: 10px;
-  margin-bottom: 20px;
+/* Import Google Font Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.center-container {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid #333333;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
-.tab {
-  background-color: #29293f;
-  color: white;
-  border: none;
+.center-header {
+  display: flex;
   padding: 10px 20px;
+}
+
+.latest-btn,
+.saved-btn,
+.add-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: #333333;
+}
+
+.add-btn {
+  font-size: 1.5rem;
+  color: #00ff7f;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.profile-icon {
+  font-size: 3rem;
+  color: #ffffff;
+  width: 50px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #333333;
+  margin-right: 20px;
+}
+
+.profile-name {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.profile-description {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #bbbbbb;
+}
+
+.join-btn {
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  font-weight: 600;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 0.9rem;
+  margin-left: 150px;
 }
 
-.tab.active {
-  background-color: #ff4b4b;
+.content-image img {
+  width: 450px;
+  display: block;
+  border-radius: 10px;
 }
 
-.create-tab {
-  background-color: #3a3a4f;
+.footer-icons {
+  display: flex;
+  padding: 15px 0;
+}
+
+.footer-icon {
   font-size: 1.5rem;
+  color: #ffffff;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: color 0.3s ease;
 }
 
-.tab:hover {
-  background-color: #ff4b4b;
+.footer-icon:hover {
+  color: #00ff7f; 
 }
+
+
+
+.footer-icons-right{
+margin-left: 380px;
+}
+

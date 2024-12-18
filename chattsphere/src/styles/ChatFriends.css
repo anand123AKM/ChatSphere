@@ -1,28 +1,59 @@
-.chat-friends {
-  width: 200px;
-  background-color: #202030;
-  color: white;
+/* Import Google Font Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.chat-friends-container {
+  background-color: #000000; 
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
   padding: 20px;
+  border-left: 1px solid #333333;
+  height: 100vh;
+  width: 400px;
+  padding-left: 30px;
 }
 
-.chat-friends h2 {
-  margin-top: 0;
+.section-title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
-.chat-friends ul {
-  list-style: none;
-  padding: 0;
+.section-icon {
+  font-size: 3.2rem;
+  color: #00ff7f;
+  margin: 5px 0;
 }
 
-.chat-friends li {
+
+
+.friends-section {
+  margin-top: 20px;
+}
+
+
+
+.friend-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.friend {
   display: flex;
   align-items: center;
-  margin: 10px 0;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
-.chat-friends img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-right: 10px;
+.friend-icon {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.friend:hover {
+  color: #00ff7f;
 }

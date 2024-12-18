@@ -5,8 +5,18 @@
 }
 
 .main-content {
-  flex: 1;
-  padding: 20px;
+display: flex;
+flex-direction: row;
   background-color: #141625;
   color: white;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.content-container {
+  width: 100%;
 }

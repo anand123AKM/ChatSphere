@@ -2,25 +2,38 @@
 import React from "react";
 import "../styles/ChatFriends.css";
 
-const ChatFriends = () => {
-  const friends = [
-    { name: "Mark", avatar: "https://via.placeholder.com/50" },
-    { name: "Bill Gates", avatar: "https://via.placeholder.com/50" },
-    { name: "Elon Musk", avatar: "https://via.placeholder.com/50" },
-    { name: "Kim Jong Un", avatar: "https://via.placeholder.com/50" },
-  ];
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faComments, faUserCircle } from "@fortawesome/free-solid-svg-icons";
 
+const ChatFriends = () => {
   return (
-    <div className="chat-friends">
-      <h2>Chat</h2>
-      <ul>
-        {friends.map((friend, index) => (
-          <li key={index}>
-            <img src={friend.avatar} alt={friend.name} />
-            {friend.name}
-          </li>
-        ))}
-      </ul>
+    <div className="chat-friends-container">
+      <div className="chat-section">
+        <h3 className="section-title">Chat</h3>
+        <FontAwesomeIcon icon={faComments} className="section-icon" />
+      </div>
+
+      <div className="friends-section">
+        <h3 className="section-title">Friends</h3>
+        <div className="friend-list">
+          <div className="friend">
+            <FontAwesomeIcon icon={faUserCircle} className="friend-icon" />
+            <span>Mark</span>
+          </div>
+          <div className="friend">
+            <FontAwesomeIcon icon={faUserCircle} className="friend-icon" />
+            <span>Bill Gates</span>
+          </div>
+          <div className="friend">
+            <FontAwesomeIcon icon={faUserCircle} className="friend-icon" />
+            <span>Elon Musk</span>
+          </div>
+          <div className="friend">
+            <FontAwesomeIcon icon={faUserCircle} className="friend-icon" />
+            <span>Kim Jong Un</span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
